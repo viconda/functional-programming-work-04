@@ -1,0 +1,24 @@
+PASS: 01 map, квадрат
+PASS: 02 map, разные длины
+PASS: 03 map, три входа
+PASS: 04 map, пустой вход
+PASS: 05 filter, предикат
+PASS: 06 filter(None)
+PASS: 07 filter, пустой вход
+PASS: 08 reduce с initial
+PASS: 09 reduce без initial
+PASS: 10 reduce пустой + initial
+PASS: 11 reduce пустой + None
+PASS: 12 reduce пустой без initial
+PASS: 13 map без входов
+PASS: 14 map неитерируемый вход
+PASS: 15 filter неитерируемый вход
+PASS: 16 map невызываемая функция
+PASS: 17 reduce один элемент
+PASS: 18 reduce с None как значением
+PASS: 19 map ленив до next
+PASS: 20 map вычисляет один элемент
+PASS: 21 map исчерпан
+PASS: 22 filter ленив и исчерпывается
+PASS: 23 filter ошибка предиката
+Итого: 23 проверки PASS. map/filter возвращают генераторы.

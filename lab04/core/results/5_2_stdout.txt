@@ -1,0 +1,2 @@
+5.2 product('abc', repeat=2): ('aa', 'ab', 'ac', 'ba', 'bb', 'bc', 'ca', 'cb', 'cc') ; количество = 9
+PASS: задание 5.2; результаты подтверждены assert.

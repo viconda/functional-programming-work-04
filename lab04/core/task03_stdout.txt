@@ -1,0 +1,33 @@
+Пример: names = ['A', 'B'] ; total = 155
+best = {'name': 'B', 'score': 85, 'tags': 'y'} ; tags = [['x', 'y'], ['y']]
+by_two = [{'name': 'A', 'score': 70, 'tags': 'x,y'}, {'name': 'B', 'score': 85, 'tags': 'y'}]
+Среда: Windows-11-10.0.26100-SP0 ; Python 3.12.14
+Процессор: AMD64 Family 25 Model 116 Stepping 1, AuthenticAMD
+N = 1000000; repeat = 3; number = 1; сравнение по медиане.
+Создание входов не измеряется; сборка мусора timeit отключена.
+names/itemgetter: lambda 0.071274 с; operator 0.043334 с
+  3 повтора lambda: (0.072184, 0.068445, 0.071274)
+  3 повтора operator: (0.045293, 0.037864, 0.043334)
+total/add+itemgetter: lambda 0.092295 с; operator 0.041850 с
+  3 повтора lambda: (0.091787, 0.092295, 0.094479)
+  3 повтора operator: (0.042277, 0.04185, 0.039774)
+best/itemgetter: lambda 0.049272 с; operator 0.024503 с
+  3 повтора lambda: (0.050597, 0.041068, 0.049272)
+  3 повтора operator: (0.020825, 0.025974, 0.024503)
+tags/methodcaller: lambda 0.182535 с; operator 0.199591 с
+  3 повтора lambda: (0.180138, 0.183156, 0.182535)
+  3 повтора operator: (0.208273, 0.199591, 0.191763)
+sort/itemgetter: lambda 0.489524 с; operator 0.480750 с
+  3 повтора lambda: (0.439018, 0.510426, 0.489524)
+  3 повтора operator: (0.547348, 0.48075, 0.446503)
+attributes/attrgetter: lambda 0.061396 с; operator 0.031508 с
+  3 повтора lambda: (0.061396, 0.062034, 0.060226)
+  3 повтора operator: (0.031508, 0.031343, 0.032276)
+multiply/mul: lambda 0.064368 с; operator 0.051223 с
+  3 повтора lambda: (0.062617, 0.064368, 0.069373)
+  3 повтора operator: (0.051223, 0.050196, 0.051581)
+truth/truth: lambda 0.059227 с; operator 0.027834 с
+  3 повтора lambda: (0.059227, 0.062264, 0.05565)
+  3 повтора operator: (0.027834, 0.022801, 0.028415)
+PASS: результаты каждого варианта совпали; измерения сохранены.
+Преимущество operator зависит от операции и среды, а не гарантируется.
