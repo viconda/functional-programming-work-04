@@ -1,6 +1,10 @@
 __pycache__/
 *.pyc
 vendor/
+vendor_local/
+tools_local/
+tools_download/
+*.whl
 qa/
 *.zip
 *source.txt
@@ -9,4 +13,6 @@ build_reports.py
 render_reports.py
 evidence_server.py
 audit*.json
+make_*.py
+capture_*.json
 package_submission.py
