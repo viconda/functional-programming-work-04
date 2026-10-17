@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+vendor/
+qa/
+*.zip
+*source.txt
+content_*.json
+build_reports.py
+render_reports.py
+evidence_server.py
+audit*.json
+package_submission.py
